@@ -48,7 +48,7 @@ var Records = React.createClass({
       return(
       <div className="records">
         <h2 className="title well text-center">
-          Records
+          Easy Budgeting!
         </h2>
         <div className="addRecords text-center">
         <div className="row no-margin">
