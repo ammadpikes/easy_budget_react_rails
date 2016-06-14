@@ -30,31 +30,36 @@ var RecordForm = React.createClass({
 
   render: function() {
     return(
-      <form className='form-inline' onSubmit={this.handleSubmit}>
-        <div className='form-group'>
-          <input type='text' className='form-control margin-right-10'
-                 placeholder='Date' name='date'
-                 value={this.state.date} onChange={this.handleChange}>
-          </input>
+      <div>
+        <form className='form-inline' onSubmit={this.handleSubmit}>
+          <div className='form-group'>
+            <input type='date' className='form-control margin-right-10'
+                   placeholder='Date' name='date'
+                   value={this.state.date} onChange={this.handleChange}>
+            </input>
+          </div>
+          <div className='form-group'>
+            <input type='text' className='form-control margin-right-10'
+                   placeholder='Title' name='title'
+                   value={this.state.title} onChange={this.handleChange}>
+            </input>
+          </div>
+          <div className='form-group'>
+            <input type='number' className='form-control margin-right-10'
+                   placeholder='Amount' name='amount'
+                   value={this.state.amount} onChange={this.handleChange}>
+            </input>
+          </div>
+          <div className='form-group'>
+            <input type='submit' className='btn btn-primary'
+                   disabled={!this.valid()}>
+            </input>
+          </div>
+        </form>
+        <div className="claim">
+        * Please Enter Negative - value for Debit amount.  
         </div>
-        <div className='form-group'>
-          <input type='text' className='form-control margin-right-10'
-                 placeholder='Title' name='title'
-                 value={this.state.title} onChange={this.handleChange}>
-          </input>
-        </div>
-        <div className='form-group'>
-          <input type='number' className='form-control margin-right-10'
-                 placeholder='Amount' name='amount'
-                 value={this.state.amount} onChange={this.handleChange}>
-          </input>
-        </div>
-        <div className='form-group'>
-          <input type='submit' className='btn btn-primary'
-                 disabled={!this.valid()}>
-          </input>
-        </div>
-      </form>
-    );
+      </div>
+    )
   }
 });

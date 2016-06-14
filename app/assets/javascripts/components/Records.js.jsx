@@ -60,11 +60,11 @@ var Records = React.createClass({
         </div>
         <table className="table table-bordered margin-top-20">
           <thead>
-            <tr>
-              <th className="text-center">Date</th>
-              <th className="text-center">Title</th>
-              <th className="text-center">Amount</th>
-              <th className="text-center">Actions</th>
+            <tr className="row-color">
+              <th className="text-center table-header">Date</th>
+              <th className="text-center table-header">Title</th>
+              <th className="text-center table-header">Amount</th>
+              <th className="text-center table-header">Actions</th>
             </tr>
           </thead>
           <tbody>
