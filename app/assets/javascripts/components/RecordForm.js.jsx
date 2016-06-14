@@ -18,7 +18,7 @@ var RecordForm = React.createClass({
 
   handleSubmit: function(e) {
     e.preventDefault();
-    $.post('',
+    $.post('/records',
            { record: this.state },
            function(data) {
              this.props.handleNewRecord(data);
