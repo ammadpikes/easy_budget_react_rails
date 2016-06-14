@@ -57,9 +57,9 @@ var RecordForm = React.createClass({
           </div>
         </form>
         <div className="claim">
-        * Please Enter Negative - value for Debit amount.  
+        * Please Enter Negative - value for Debit amount.
         </div>
       </div>
     )
   }
-});
+})

@@ -77,6 +77,6 @@ var Records = React.createClass({
           </tbody>
         </table>
       </div>
-    );
+    )
   }
 })
